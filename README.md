@@ -14,6 +14,8 @@ Partially complete features:
 
 - Ratings component shows only full or empty icon but not half filled
 
+![alt text](image.png)
+
 ## Setup
 
 Instructions to run the application:
