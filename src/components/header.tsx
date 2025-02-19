@@ -8,11 +8,32 @@ export default function Header() {
       <Link href="/">
         <Image src={qLogo} alt="Qantas Logo" height={40} priority={false} />
       </Link>
-      <nav className="space-x-4">
-        <Link href="/hotels">Hotels</Link>
-        <Link href="/holidays">Holidays</Link>
-        <Link href="/rewards">Rewards</Link>
-      </nav>
+      <ul className="flex">
+        <li className="flex-1 mr-2">
+          <Link
+            href="/hotels"
+            className="text-center block border  border-white rounded hover:border-gray-200 text-blue-500 hover:bg-gray-200 py-2 px-4"
+          >
+            Hotels
+          </Link>
+        </li>
+        <li className="flex-1 mr-2">
+          <Link
+            href="/holidays"
+            className="text-center block border border-white rounded hover:border-gray-200 text-blue-500 hover:bg-gray-200 py-2 px-4"
+          >
+            Holidays
+          </Link>
+        </li>
+        <li className="flex-1 mr-2">
+          <Link
+            href="/rewards"
+            className="text-center block border border-white rounded hover:border-gray-200 text-blue-500 hover:bg-gray-200 py-2 px-4"
+          >
+            Rewards
+          </Link>
+        </li>
+      </ul>
     </header>
   );
 }
