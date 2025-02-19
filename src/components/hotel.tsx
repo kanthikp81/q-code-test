@@ -6,7 +6,7 @@ import HotelPrice from "./hotel-price";
 
 const HotelComponent: React.FC<Hotel> = ({ property, offer }) => {
   return (
-    <div className="flex flex-row p-2 m-2 max-w-full border border-gray-200 bg-emerald-100">
+    <div className="flex flex-row p-2 m-2 max-w-full border-t border-gray-200">
       <HotelImage
         imageUrl={property.previewImage.url}
         caption={property.title}
