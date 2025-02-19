@@ -1,0 +1,10 @@
+- 7+ years of experience as a professional software engineer (typically)
+- Experienced software engineer, with in-depth understanding in most or all of the following: Agile and Lean software development practices, Continuous Delivery, Continuous Integration,, automated testing best practices, DevOps
+- In-depth, expert knowledge of core technologies required for the role, including TypeScript/JavaScript, CSS and HTML
+- Client-side programming frameworks, specifically React.js with a focus on the latest features and best practices using TypeScript
+- Familiarity with the Next.js framework, for server-side rendering and static site generation
+- Experience working on/with UI Component Libraries and/or Design Systems is advantageous
+- Proficient with automated testing tools and libraries specifically for React and Node.js ecosystems
+- Good knowledge of important software design considerations for React and Node.js
+- Server-side programming using Node.js, expressiveness with modern features of ES6+ applications
+- Knowledge of cloud computing platforms, AWS, and services relevant to React, Next.js and Node.js deployment
