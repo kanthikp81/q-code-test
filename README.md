@@ -5,9 +5,10 @@ Used Next.js to fulfill the coding test requirements.
 Implemented below features:
 
 - Created an api to fetch the data from the json file provided. Added deliberate delay of 1000ms.
-- Implemented Sort functionality
-- Added Not found and loading pages to show custom message to the user. Click on Holidays, Rewards links to see the behaviour
-- Used Jest to create few unit tests to test the summary , sortby functionality
+- Fetch and display property (hotel) details
+- Implemented Sort functionality and summary in the header
+- Added Not found and loading pages to show custom message to the user. Click on Hotels, Holidays, Rewards links to see the behaviour
+- Used Jest to create unit tests to test the summary , sortby , api router functionality
 
 Partially complete features:
 
