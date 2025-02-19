@@ -13,12 +13,16 @@ Partially complete features:
 
 - Ratings component shows only full or empty icon but not half filled
 
-Instructions to run:
+## Setup
 
-- npm install
-- npm run dev
+Instructions to run the application:
+
+- `npm install`
+- Create `.env.local` file in the root directory and add below environment variable for api calls to work
+  - `URL=http://localhost:3000`
+- `npm run dev`
 - Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 To run tests:
 
-- npm run test
+- `npm run test`
