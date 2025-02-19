@@ -16,9 +16,7 @@ export default async function HotelsPage() {
 
   return (
     <div className="container">
-      <h1>Hotels</h1>
-
-      <div className="grid grid-cols-1 gap-4 mt-4">
+      <div className="grid grid-cols-1 gap-4 m-4">
         <HotelList hotelList={hotelsData.results} />
       </div>
     </div>

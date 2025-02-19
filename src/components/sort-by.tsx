@@ -10,9 +10,14 @@ const SortBy: React.FC<SortByProps> = ({ onChange }) => {
   };
 
   return (
-    <div>
+    <div className="m-2">
       <label htmlFor="sort-by">Sort By: </label>
-      <select id="sort-by" defaultValue="h-l" onChange={handleChange}>
+      <select
+        className="border border-gray-500 rounded-md text-sm"
+        id="sort-by"
+        defaultValue="h-l"
+        onChange={handleChange}
+      >
         <option value="h-l">Price (high-low)</option>
         <option value="l-h">Price (low-high)</option>
       </select>

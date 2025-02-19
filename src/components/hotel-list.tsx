@@ -31,19 +31,14 @@ const HotelList: React.FC<HotelListProps> = ({ hotelList }) => {
   return (
     <>
       <div className="flex justify-between">
-        <div>{hotels.length} hotels found in Sydney</div>
+        <div className="m-2">{hotels.length} hotels found in Sydney</div>
         <div>
           <SortBy onChange={sortData} />
         </div>
       </div>
-      <div className="flex flex-col space-y-4">
+      <div className="flex flex-col justify-between max-w-full">
         {hotels.map((hotel) => (
-          <div key={hotel.id} className="flex">
-            <HotelComponent {...hotel} />
-            <div className="p-4 bg-white shadow-md">
-              <h2 className="text-lg font-bold">{hotel.property.title}</h2>
-            </div>
-          </div>
+          <HotelComponent key={hotel.id} {...hotel} />
         ))}
       </div>
     </>
