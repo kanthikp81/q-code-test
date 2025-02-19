@@ -1,3 +1,5 @@
+import HotelList from "@/components/hotel-list";
+
 export default async function HotelsPage() {
   const getHotels = async () => {
     const result = await fetch(process.env.URL + "/api/hotels", {
@@ -7,10 +9,18 @@ export default async function HotelsPage() {
     if (result.ok) {
       return result.json();
     }
-    return [];
+    return { results: [] };
   };
 
   const hotelsData = await getHotels();
-  console.log(hotelsData);
-  return <h1>Hotels Page</h1>;
+
+  return (
+    <div className="container">
+      <h1>Hotels</h1>
+
+      <div className="grid grid-cols-1 gap-4 mt-4">
+        <HotelList hotelList={hotelsData.results} />
+      </div>
+    </div>
+  );
 }
