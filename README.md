@@ -29,3 +29,5 @@ Instructions to run the application:
 To run tests:
 
 - `npm run test`
+
+This web application has been deployed on Vercel and can be accessed here - [https://q-code-test.vercel.app/](https://q-code-test.vercel.app/)
