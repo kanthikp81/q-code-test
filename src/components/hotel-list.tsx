@@ -31,7 +31,7 @@ const HotelList: React.FC<HotelListProps> = ({ hotelList }) => {
   return (
     <>
       <div className="flex justify-between">
-        <div className="m-2">
+        <div className="m-2" aria-label="hotels-in-city-count">
           <b>{hotels.length}</b> <i>hotels in</i> <b>Sydney</b>
         </div>
         <div>

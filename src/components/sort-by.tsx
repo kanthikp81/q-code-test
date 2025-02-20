@@ -10,7 +10,7 @@ const SortBy: React.FC<SortByProps> = ({ onChange }) => {
   };
 
   return (
-    <div className="m-2">
+    <div className="m-2" aria-label="sort-by" role="listbox">
       <label className="font-bold" htmlFor="sort-by">
         Sort By{" "}
       </label>

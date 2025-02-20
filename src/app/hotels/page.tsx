@@ -1,3 +1,4 @@
+import Head from "next/head";
 import HotelList from "@/components/hotel-list";
 
 export default async function HotelsPage() {
@@ -16,6 +17,9 @@ export default async function HotelsPage() {
 
   return (
     <div className="container mx-auto">
+      <Head>
+        <title>Hotels</title>
+      </Head>
       <div className="grid grid-cols-1 gap-4 m-4">
         <HotelList hotelList={hotelsData.results} />
       </div>
