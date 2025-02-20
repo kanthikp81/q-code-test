@@ -8,13 +8,13 @@ const HotelPrice: React.FC<Offer> = ({ displayPrice, savings }) => {
         <p className="m-0 text-sm leading-6 text-gray-500">
           <b>1</b> night total({displayPrice.currency})
         </p>
-        <h2 className="text-xl leading-6 font-bold m-0 before:content-['$'] before:text-sm">
+        <h2 className="text-xl leading-6 font-bold m-0 before:content-['$'] before:text-sm before:align-top">
           {displayPrice.amount}
         </h2>
       </div>
       <div className="text-base text-red-700 m-0 min-h-12 ">
         {savings && (
-          <p className="leading-6 after:content-['~'] after:text-sm">
+          <p className="leading-6 after:content-['~'] after:text-sm after:align-top">
             Save ${savings.amount}
           </p>
         )}
