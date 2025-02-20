@@ -32,7 +32,7 @@ const HotelList: React.FC<HotelListProps> = ({ hotelList }) => {
     <>
       <div className="flex justify-between">
         <div className="m-2">
-          <b>{hotels.length}</b> <i>hotels found in</i> <b>Sydney</b>
+          <b>{hotels.length}</b> <i>hotels in</i> <b>Sydney</b>
         </div>
         <div>
           <SortBy onChange={sortData} />

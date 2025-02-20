@@ -6,20 +6,22 @@ import HotelPrice from "./hotel-price";
 
 const HotelComponent: React.FC<Hotel> = ({ property, offer }) => {
   return (
-    <div className="flex flex-row p-2 m-2 max-w-full border-t border-gray-200">
+    <div className="flex flex-row p-2 m-2 max-w-full ">
       <HotelImage
         imageUrl={property.previewImage.url}
         caption={property.title}
         promoTitle={offer.promotion.title}
       />
-      <HotelDetails
-        name={property.title}
-        address={property.address}
-        rating={property.rating}
-        cancellationOffer={offer?.cancellationOption?.cancellationType}
-        offerName={offer.name}
-      />
-      <HotelPrice {...offer} />
+      <div className="inline-flex flex-row w-full border-t border-gray-200">
+        <HotelDetails
+          name={property.title}
+          address={property.address}
+          rating={property.rating}
+          cancellationOffer={offer?.cancellationOption?.cancellationType}
+          offerName={offer.name}
+        />
+        <HotelPrice {...offer} />
+      </div>
     </div>
   );
 };

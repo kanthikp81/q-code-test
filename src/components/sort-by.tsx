@@ -11,7 +11,9 @@ const SortBy: React.FC<SortByProps> = ({ onChange }) => {
 
   return (
     <div className="m-2">
-      <label htmlFor="sort-by">Sort By </label>
+      <label className="font-bold" htmlFor="sort-by">
+        Sort By{" "}
+      </label>
       <select
         className="border border-gray-500 rounded-md text-sm"
         id="sort-by"

@@ -15,7 +15,7 @@ export default async function HotelsPage() {
   const hotelsData = await getHotels();
 
   return (
-    <div className="container">
+    <div className="container mx-auto">
       <div className="grid grid-cols-1 gap-4 m-4">
         <HotelList hotelList={hotelsData.results} />
       </div>

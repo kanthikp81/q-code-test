@@ -17,8 +17,8 @@ const HotelImage: React.FC<HotelImageProps> = ({
       <Image
         src={imageUrl}
         alt={caption}
-        width={150}
-        height={150}
+        width={250}
+        height={250}
         className="object-cover p-2"
       />
       <div className=" absolute bg-white text-red-700 text-sm top-3 left-2 p-1 ">
